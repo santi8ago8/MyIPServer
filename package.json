@@ -2,10 +2,13 @@
   "name": "MyIP",
   "version": "0.0.0",
   "description": "Client and Server",
-  "main": "app",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
+  },
+  "engines": {
+    "node": "0.10.x"
   },
   "repository": {
     "type": "git",
