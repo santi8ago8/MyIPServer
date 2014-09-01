@@ -13,7 +13,7 @@ router.route('/')
     .put(function (req, res) {
 
         //console.log(req._remoteAddress);
-        //console.log(req.body);
+        console.log(req);
 
         machines[req.body.name] = req.body;
         machines[req.body.name].ip = req._remoteAddress;
