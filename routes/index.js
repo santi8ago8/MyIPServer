@@ -12,11 +12,11 @@ router.route('/')
     })
     .put(function (req, res) {
 
-        //console.log(req._remoteAddress);
-        console.log(req);
+        var ip = req.headers['x-forwarded-for'];
+        //console.log(ip);
 
         machines[req.body.name] = req.body;
-        machines[req.body.name].ip = req._remoteAddress;
+        machines[req.body.name].ip = ip;
 
         machines[req.body.name].lastUpdate = new Date().getTime()/1000;
 
