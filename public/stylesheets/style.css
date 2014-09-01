@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.machine {
+    border:1px solid #d1d1d1;
+}
+
+.machine h3{
+
+    margin: 4px;
+
+}
+
+.machine div{
+    margin: 3px;
+}
